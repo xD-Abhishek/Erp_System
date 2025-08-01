@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Tickets{% endblock %}
+{% block header %}Ticket List{% endblock %}
+{% block content %}
+<a href="{% url 'ticket_create' %}" class="btn btn-primary mb-3">Add Ticket</a>
+<ul class="list-group">
+    {% for ticket in tickets %}
+        <li class="list-group-item">{{ ticket }}</li>
+    {% empty %}
+        <li class="list-group-item">No tickets found.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

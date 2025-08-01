@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}ERP System{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-color: #f4f6f9;
+        }
+
+        .sidebar {
+            height: 100vh;
+            background-color: #343a40;
+            padding-top: 20px;
+            position: fixed;
+            width: 220px;
+            top: 0;
+            left: 0;
+        }
+
+        .sidebar a {
+            color: #fff;
+            padding: 15px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+
+        .main-content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .content-box {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="{% url 'home' %}">🏠 Dashboard</a>
+        <a href="{% url 'lead_list' %}">📋 Leads</a>
+        <a href="{% url 'ticket_list' %}">🎫 Tickets</a>
+        <a href="{% url 'employee_list' %}">👥 Employees</a>
+        <a href="{% url 'task_list' %}">📌 Tasks</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-light bg-light mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">ERP System</a>
+                <button class="btn btn-outline-secondary" onclick="toggleSidebar()">☰</button>
+            </div>
+        </nav>
+
+        <!-- Dynamic Content -->
+        <div class="content-box">
+            <h3>{% block header %}{% endblock %}</h3>
+            <hr>
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+
+    <!-- JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sidebar Toggle JS -->
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = sidebar.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>

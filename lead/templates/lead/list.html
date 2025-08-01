@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Lead{% endblock %}
+{% block header %}Lead List{% endblock %}
+{% block content %}
+<a href="{% url 'add_lead' %}" class="btn btn-primary mb-3">Add Lead</a>
+<ul class="list-group">
+    {% for lead in lead %}
+        <li class="list-group-item">{{ lead }}</li>
+    {% empty %}
+        <li class="list-group-item">No lead found.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

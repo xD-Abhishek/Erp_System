@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Employees{% endblock %}
+{% block header %}Employee List{% endblock %}
+{% block content %}
+<a href="{% url 'employee_create' %}" class="btn btn-primary mb-3">Add Employee</a>
+<ul class="list-group">
+    {% for employee in employees %}
+        <li class="list-group-item">{{ employee }}</li>
+    {% empty %}
+        <li class="list-group-item">No employees found.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

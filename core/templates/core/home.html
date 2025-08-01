@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}ERP Dashboard{% endblock %}
+
+{% block content %}
+<h1 class="dashboard-title text-center my-4">ERP Dashboard</h1>
+<div class="row justify-content-center">
+    <div class="col-md-3">
+        <div class="card text-white bg-primary">
+            <div class="card-body">
+                <h5 class="card-title">Total Leads</h5>
+                <p class="card-text fs-3">{{ lead_count }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-success">
+            <div class="card-body">
+                <h5 class="card-title">Total Tickets</h5>
+                <p class="card-text fs-3">{{ ticket_count }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-warning">
+            <div class="card-body">
+                <h5 class="card-title">Total Employees</h5>
+                <p class="card-text fs-3">{{ employee_count }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-white bg-danger">
+            <div class="card-body">
+                <h5 class="card-title">Total Tasks</h5>
+                <p class="card-text fs-3">{{ task_count }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
