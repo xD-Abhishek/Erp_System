@@ -59,28 +59,37 @@ Each app contains:
    
    cd erp_system
    
-Create a virtual environment
+**Create a virtual environment**
 
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  
 
-Install dependencies
+**On Windows:**
+
+venv\Scripts\activate
+
+**Install dependencies**
+
 pip install -r requirements.txt
 
-Apply migrations
-python manage.py makemigrations
+**Apply migrations**
+
+python manage.py makemigrations 
+
 python manage.py migrate
 
-Run the development server
+**Run the development server**
+
 python manage.py runserver
 
-Access the app
+**Access the app**
+
 http://127.0.0.1:8000/
 
-🤝 Contributing
+## 🤝 Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-📜 License
+## 📜 License
 This project is open-source and free to use under the MIT License.
 
 ---
