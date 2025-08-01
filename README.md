@@ -13,7 +13,6 @@ A basic ERP (Enterprise Resource Planning) web application built using Django. T
 - 📄 Template-based HTML views
 
 ---
-
 ## 📁 Project Structure
 
 erp_system/
@@ -35,7 +34,6 @@ Each app contains:
 - `urls.py`
 - `templates/<app_name>/`
 
----
 
 ## 🚀 Getting Started
 
