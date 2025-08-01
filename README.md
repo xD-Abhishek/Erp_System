@@ -56,8 +56,11 @@ Each app contains:
 1. **Clone the repo**
 
    git clone https://github.com/your-username/erp_system.git
+   
    cd erp_system
+   
 Create a virtual environment
+
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
