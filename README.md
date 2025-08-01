@@ -86,6 +86,25 @@ python manage.py runserver
 
 http://127.0.0.1:8000/
 
+## 📸 Screenshots
+
+Here are some screenshots showcasing the functionality of the ERP System:
+
+### 🔹 Dashboard View
+![Dashboard](screenshots/dashboard-view.png)
+
+### 🔹 Admin - Employee Management
+![Employee Management](screenshots/employee-management.png)
+
+### 🔹 Add Task Page
+![Add Task](screenshots/add-task.png)
+
+### 🔹 Submit Ticket Page
+![Submit Ticket](screenshots/submit-ticket.png)
+
+### 🔹 Admin Panel
+![Admin View](screenshots/admin-view.png)
+
 ## 🤝 Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
