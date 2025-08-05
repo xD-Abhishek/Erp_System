@@ -59,7 +59,7 @@ Each app contains:
    
    cd erp_system
    ```
-**Create a virtual environment**
+2. **Create a virtual environment**
 ```bash
 python -m venv venv
 source venv/bin/activate  
@@ -68,20 +68,20 @@ source venv/bin/activate
 ```bash
 venv\Scripts\activate
 ```
-**Install dependencies**
+3. **Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
-**Apply migrations**
+4. **Apply migrations**
 ```bash
 python manage.py makemigrations 
 python manage.py migrate
 ```
-**Run the development server**
+5. **Run the development server**
 ```bash
 python manage.py runserver
 ```
-**Access the app**
+6. **Access the app**
 ```bash
 http://127.0.0.1:8000/
 ```
