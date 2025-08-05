@@ -14,27 +14,18 @@ A basic ERP (Enterprise Resource Planning) web application built using Django. T
 
 ---
 ## 📁 Project Structure
-
+```bash
 erp_system/
-
 ├── employees/
-
 ├── lead/
-
 ├── tasks/
-
 ├── tickets/
-
 ├── erp_system/
-
 │ └── settings.py
-
 ├── templates/
-
 ├── db.sqlite3
-
 └── manage.py
-
+```
 
 Each app contains:
 - `models.py`
